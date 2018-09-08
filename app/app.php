@@ -25,5 +25,5 @@ header("Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accep
 
 include_once __DIR__ . '/containers/containers.php';
 include_once __DIR__ . '/routes/routes.php';
-include_once __DIR__ . '/middleware/gsMiddleware.php';
-$app->add(new sa\middleware\gsMiddleware($container));
+//include_once __DIR__ . '/middleware/gsMiddleware.php'; //TODO fix if needed. No idea why this works on the staging server but not in prod.
+//$app->add(new sa\middleware\gsMiddleware($container));
